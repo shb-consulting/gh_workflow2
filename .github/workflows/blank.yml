@@ -4,9 +4,7 @@ name: CI
 
 on:
   workflow_call:
-    secrets:
-      SOME_SECRET:
-        required: true
+ 
   push:
     branches: [ "main" ]
 
