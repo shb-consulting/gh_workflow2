@@ -3,18 +3,9 @@
 name: CI
 
 on:
-  push:
-    paths-ignore:
-      - 'images/**'
-      - README.md
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  release:
-    types: [ created ]
   workflow_call:
+  push:
+    branches: [ "main" ]
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
